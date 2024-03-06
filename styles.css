@@ -1,2 +1,66 @@
+.player {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+}
 
-/* Your CSS Code here. */
+.player__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.player__button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.progress {
+  flex-grow: 1;
+  height: 5px;
+  background: #ccc;
+  position: relative;
+  margin: 0 10px;
+}
+
+.progress__filled {
+  background: #ffc600;
+  height: 100%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 0;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #ccc;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffc600;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.rewind,
+.skip {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
